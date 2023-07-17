@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'josefin sans', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(images1/knzv7f9a.png);
+    height: 100vh;
+    background-size: cover;
+}
+
+.hero{
+    height: 80vh;
+    width: 100%;
+    
+    background-size: cover;
+    background-position: center;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-left: 10%;
+}
+
+
+.logo{
+    color: white;
+    font-size: 28px;
+}
+
+ .wrapper{
+    content: 'flexible';
+    position: absolute;
+    background: linear-gradient(0deg,transparent,
+    transparent, rgb(221, 223, 223),rgb(237, 240, 237),rgb(240, 243, 240));
+    z-index: 1;
+    color: #101111;
+    transform-origin: left center;
+    animation: animate 8s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+span{
+    color: rgb(113, 212, 118);
+    text-align: center;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline;
+    padding: 30px 50px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: lightgreen;
+    transition: .3s;
+}
+
+section{
+    align-items: flex-start;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+}
+
+
+footer ul{
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0;
+    position: relative;
+    padding: 40px 55px 10px;
+    content: none;
+    box-sizing: content-box;
+    display: inline;
+    font-weight: bold;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.shadow footer ul li span{
+    overflow: hidden;
+} 
+
+
+
+.main{
+    box-sizing: content-box;
+    border-radius: 3px;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.main{
+    width: 25em;
+    height: 6em;
+    border: 4px solid;
+    padding: 20px 25px;
+    border-radius: 1.5em;
+    box-shadow: 2px 3px 4px #101111;
+    border-color: rgba(121, 148, 148, 0.74);
+    position: static;
+}
+
+
+
+.container{
+    width: 80vmin;
+    height: 60vmin;
+    position: absolute;
+    transform: translate(-50%,-60%);
+    top: 50%;
+    left: 50%;
+    bottom: 100vmin;
+    overflow: hidden;
+    background-color: #f4f7f7;
+    border: 4px solid #5c5e5d;
+    border-radius: 100px;
+    box-shadow: 10px 25px 30px rgba(23, 26, 25, 0.781);
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+
+.container .wrapper img{
+    width: 600px;
+    height: 500px;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+
+
+:root {
+	--gradient-shadow: linear-gradient(
+		45deg,
+		#c9a1b8,
+		#a0a0ca,
+		#8fd68f,
+		#d4d49b,
+		#c29f9f,
+		#d8b8cb,
+		#9d9dd6,
+		#8ce28c,
+		#bbbb7f,
+        #443d3e
+	);
+}
+
+.shadow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	width: 400px;
+	height: 150px;
+	background: linear-gradient(30deg, #747978f6, #262626);
+    border-radius: 20px;
+}
+.shadow:before,
+.shadow:after {
+	content: "";
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	background: var(--gradient-shadow);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: animate 15s linear infinite;
+}
+
+.shadow:after {
+	filter: blur(20px);
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 300% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
